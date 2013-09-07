@@ -1,0 +1,36 @@
+\hypertarget{_table_object_detector_8hpp}{\section{Object\-Pose\-Estimation/\-Table\-Object\-Detector.hpp File Reference}
+\label{_table_object_detector_8hpp}\index{Object\-Pose\-Estimation/\-Table\-Object\-Detector.\-hpp@{Object\-Pose\-Estimation/\-Table\-Object\-Detector.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}Table\-Object\-Detector.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$boost/make\-\_\-shared.\-hpp$>$}\\*
+Include dependency graph for Table\-Object\-Detector.\-hpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_table_object_detector_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{_table_object_detector_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceope}{ope}
+\begin{DoxyCompactList}\small\item\em Namespace {\itshape ope} that contains all the functions and types relevant for estimating an object's pose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Nicolas Burrus, altered by Kester Duncan 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+Adapted from ntk's Table\-Object\-Detector
+\end{DoxyNote}
+This implementation file is used to separate the declared templates from the implementation but at the same time, make the implementation of the templates visible to the compiler. This is so because if the implementation is done in a $\ast$.cpp file, the compiler cannot explicitly instantiate a new class given the template argument. The implementation must be found with the declaration, which is a stupid but necessary C++ limitation. 

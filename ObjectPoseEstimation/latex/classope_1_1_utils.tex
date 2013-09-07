@@ -1,0 +1,77 @@
+\hypertarget{classope_1_1_utils}{\section{ope\-:\-:Utils Class Reference}
+\label{classope_1_1_utils}\index{ope\-::\-Utils@{ope\-::\-Utils}}
+}
+
+
+Performs frequently used utility functions.  
+
+
+
+
+{\ttfamily \#include $<$Utils.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classope_1_1_utils_a6c7d217f7eefe013e2d2a08663b2d0dd}{convert\-Point\-Cloud} (const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B\-A $>$ \&src, pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B $>$ \&tgt)
+\begin{DoxyCompactList}\small\item\em Convert between pcl point cloud types. \end{DoxyCompactList}\item 
+static void \hyperlink{classope_1_1_utils_a88e292fa3c280d40ddccdf63412d77c2}{transform\-Point\-Cloud} (pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B $>$ \&cloud)
+\begin{DoxyCompactList}\small\item\em Transform an X\-Y\-Z\-R\-G\-B point cloud from the Kinect optical frame to world coordinate frame. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_utils_a9fb4657c9ec6b57e03d1d7eefc14da08}{static void \hyperlink{classope_1_1_utils_a9fb4657c9ec6b57e03d1d7eefc14da08}{print\-Current\-Date\-Time} ()}\label{classope_1_1_utils_a9fb4657c9ec6b57e03d1d7eefc14da08}
+
+\begin{DoxyCompactList}\small\item\em Prints the current local time to the output stream. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_utils_a93d2b83a94db71e0058c02226d64375e}{static size\-\_\-t \hyperlink{classope_1_1_utils_a93d2b83a94db71e0058c02226d64375e}{get\-Desired\-Object} (pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B $>$\-::Const\-Ptr pt\-Cloud\-Ptr, const std\-::vector$<$ \hyperlink{classope_1_1_bounding_box}{Bounding\-Box} $>$ \&boxes)}\label{classope_1_1_utils_a93d2b83a94db71e0058c02226d64375e}
+
+\begin{DoxyCompactList}\small\item\em Displays a pointcloud with highlighted objects in order to determine the user's object of choice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Performs frequently used utility functions. 
+
+\begin{DoxyAuthor}{Author}
+Kester Duncan 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classope_1_1_utils_a6c7d217f7eefe013e2d2a08663b2d0dd}{\index{ope\-::\-Utils@{ope\-::\-Utils}!convert\-Point\-Cloud@{convert\-Point\-Cloud}}
+\index{convert\-Point\-Cloud@{convert\-Point\-Cloud}!ope::Utils@{ope\-::\-Utils}}
+\subsubsection[{convert\-Point\-Cloud}]{\setlength{\rightskip}{0pt plus 5cm}void Utils\-::convert\-Point\-Cloud (
+\begin{DoxyParamCaption}
+\item[{const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B\-A $>$ \&}]{src, }
+\item[{pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B $>$ \&}]{tgt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classope_1_1_utils_a6c7d217f7eefe013e2d2a08663b2d0dd}
+
+
+Convert between pcl point cloud types. 
+
+Converts from pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B\-A to pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B 
+\begin{DoxyParams}{Parameters}
+{\em $<$src$>$} & -\/ input {\ttfamily pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B\-A} point cloud \\
+\hline
+{\em $<$tgt$>$} & -\/ output {\ttfamily pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B} point cloud \\
+\hline
+\end{DoxyParams}
+\hypertarget{classope_1_1_utils_a88e292fa3c280d40ddccdf63412d77c2}{\index{ope\-::\-Utils@{ope\-::\-Utils}!transform\-Point\-Cloud@{transform\-Point\-Cloud}}
+\index{transform\-Point\-Cloud@{transform\-Point\-Cloud}!ope::Utils@{ope\-::\-Utils}}
+\subsubsection[{transform\-Point\-Cloud}]{\setlength{\rightskip}{0pt plus 5cm}void Utils\-::transform\-Point\-Cloud (
+\begin{DoxyParamCaption}
+\item[{pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B $>$ \&}]{cloud}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classope_1_1_utils_a88e292fa3c280d40ddccdf63412d77c2}
+
+
+Transform an X\-Y\-Z\-R\-G\-B point cloud from the Kinect optical frame to world coordinate frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$cloud$>$} & -\/ the cloud to be transformed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Object\-Pose\-Estimation/Utils.\-h\item 
+Object\-Pose\-Estimation/Utils.\-cpp\end{DoxyCompactItemize}

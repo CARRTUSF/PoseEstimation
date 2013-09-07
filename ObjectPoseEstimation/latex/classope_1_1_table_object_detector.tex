@@ -1,0 +1,219 @@
+\hypertarget{classope_1_1_table_object_detector}{\section{ope\-:\-:Table\-Object\-Detector$<$ Point\-Type $>$ Class Template Reference}
+\label{classope_1_1_table_object_detector}\index{ope\-::\-Table\-Object\-Detector$<$ Point\-Type $>$@{ope\-::\-Table\-Object\-Detector$<$ Point\-Type $>$}}
+}
+
+
+Detects clusters lying on a flat table.  
+
+
+
+
+{\ttfamily \#include $<$Table\-Object\-Detector.\-h$>$}
+
+
+
+Collaboration diagram for ope\-:\-:Table\-Object\-Detector$<$ Point\-Type $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classope_1_1_table_object_detector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_table_object_detector_a43781f8b76b67c1754edfda2f5d6b032}{typedef pcl\-::\-Point\-Cloud\\*
+$<$ Point\-Type $>$ {\bfseries Point\-Cloud}}\label{classope_1_1_table_object_detector_a43781f8b76b67c1754edfda2f5d6b032}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a4f837e1647244396b22f1fb04cfa97ee}{typedef Point\-Cloud\-::\-Const\-Ptr {\bfseries Point\-Cloud\-Const\-Ptr}}\label{classope_1_1_table_object_detector_a4f837e1647244396b22f1fb04cfa97ee}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a2dd23dfc9515ba4f63e6b655ae6fae97}{typedef pcl\-::search\-::\-Kd\-Tree\\*
+$<$ Point\-Type $>$\-::Ptr {\bfseries Kd\-Tree\-Ptr}}\label{classope_1_1_table_object_detector_a2dd23dfc9515ba4f63e6b655ae6fae97}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a3686e6d9463b8566241b9f9e4cd33032}{typedef std\-::vector$<$ Point\-Type, \\*
+Eigen\-::aligned\-\_\-allocator\\*
+$<$ Point\-Type $>$ $>$ {\bfseries Point\-Vector}}\label{classope_1_1_table_object_detector_a3686e6d9463b8566241b9f9e4cd33032}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_table_object_detector_a5f57d754cc2940daa50c9f056571ff9c}{\hyperlink{classope_1_1_table_object_detector_a5f57d754cc2940daa50c9f056571ff9c}{Table\-Object\-Detector} ()}\label{classope_1_1_table_object_detector_a5f57d754cc2940daa50c9f056571ff9c}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_aee3f6351adf71c9cd2d6f2f75af5c361}{void \hyperlink{classope_1_1_table_object_detector_aee3f6351adf71c9cd2d6f2f75af5c361}{initialize} ()}\label{classope_1_1_table_object_detector_aee3f6351adf71c9cd2d6f2f75af5c361}
+
+\begin{DoxyCompactList}\small\item\em Initialize the properties of the \hyperlink{classope_1_1_table_object_detector}{Table\-Object\-Detector}. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_add7061315f99ba346ec676f48a0bab25}{float \hyperlink{classope_1_1_table_object_detector_add7061315f99ba346ec676f48a0bab25}{voxel\-Size} () const }\label{classope_1_1_table_object_detector_add7061315f99ba346ec676f48a0bab25}
+
+\begin{DoxyCompactList}\small\item\em Gets the voxel size used for downsampling. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_af42549269acc976a93ef8d82ff2a030c}{void \hyperlink{classope_1_1_table_object_detector_af42549269acc976a93ef8d82ff2a030c}{set\-Object\-Voxel\-Size} (float s=0.\-003)}\label{classope_1_1_table_object_detector_af42549269acc976a93ef8d82ff2a030c}
+
+\begin{DoxyCompactList}\small\item\em Sets the voxel size used for object downsampling. Default size is 0.\-3 cm. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_aadb6e95bdc3ed55de1db234d28565991}{void \hyperlink{classope_1_1_table_object_detector_aadb6e95bdc3ed55de1db234d28565991}{set\-Background\-Voxel\-Size} (float s=0.\-01)}\label{classope_1_1_table_object_detector_aadb6e95bdc3ed55de1db234d28565991}
+
+\begin{DoxyCompactList}\small\item\em Sets the voxel size used for background downsampling. Default size is 1.\-0 cm. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_ab141a973c1ef4057ce3294b5f14868fc}{void \hyperlink{classope_1_1_table_object_detector_ab141a973c1ef4057ce3294b5f14868fc}{set\-Depth\-Limits} (float min\-\_\-z=0.\-4, float max\-\_\-z=2.\-0)}\label{classope_1_1_table_object_detector_ab141a973c1ef4057ce3294b5f14868fc}
+
+\begin{DoxyCompactList}\small\item\em Sets the depth limits for processing. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_ada4261fed1a6ec12829757e81f1cfd51}{void \hyperlink{classope_1_1_table_object_detector_ada4261fed1a6ec12829757e81f1cfd51}{set\-Object\-Height\-Limits} (float min\-\_\-h=0.\-01f, float max\-\_\-h=0.\-5f)}\label{classope_1_1_table_object_detector_ada4261fed1a6ec12829757e81f1cfd51}
+
+\begin{DoxyCompactList}\small\item\em Sets the height limits for detected objects. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_ae2cebb051690bf558e0f6de7fdba3873}{void \hyperlink{classope_1_1_table_object_detector_ae2cebb051690bf558e0f6de7fdba3873}{set\-Max\-Dist\-To\-Plane} (float d)}\label{classope_1_1_table_object_detector_ae2cebb051690bf558e0f6de7fdba3873}
+
+\begin{DoxyCompactList}\small\item\em Sets the threshold for an object's distance from the plane (table) \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_a5c86608c4b555cb23e28804bf06f2e2b}{bool {\bfseries detect} (Point\-Cloud\-Const\-Ptr cloud)}\label{classope_1_1_table_object_detector_a5c86608c4b555cb23e28804bf06f2e2b}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_ad1b0adb48ce66a4c79b8bd0be8a25fb5}{const \hyperlink{classope_1_1_plane}{Plane} \& \hyperlink{classope_1_1_table_object_detector_ad1b0adb48ce66a4c79b8bd0be8a25fb5}{plane} () const }\label{classope_1_1_table_object_detector_ad1b0adb48ce66a4c79b8bd0be8a25fb5}
+
+\begin{DoxyCompactList}\small\item\em Gets a constant reference to the plane properties. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_ad09959876eacf31ab2e97906dc02c0a4}{const std\-::vector$<$ Point\-Vector $>$ \& \hyperlink{classope_1_1_table_object_detector_ad09959876eacf31ab2e97906dc02c0a4}{object\-Clusters} () const }\label{classope_1_1_table_object_detector_ad09959876eacf31ab2e97906dc02c0a4}
+
+\begin{DoxyCompactList}\small\item\em Gets a constant reference to the list of objects detected on the table. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_a8278804d04b8efdf1111bea658de0fc9}{Point\-Cloud\-Const\-Ptr \hyperlink{classope_1_1_table_object_detector_a8278804d04b8efdf1111bea658de0fc9}{table\-Inliers} () const }\label{classope_1_1_table_object_detector_a8278804d04b8efdf1111bea658de0fc9}
+
+\begin{DoxyCompactList}\small\item\em Gets a constant pointer to the table points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_table_object_detector_ad3a450f6f49bd8cc7c286dede4f768a0}{E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W \\*
+typedef Point\-Type {\bfseries Point}}\label{classope_1_1_table_object_detector_ad3a450f6f49bd8cc7c286dede4f768a0}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_table_object_detector_a71a7a4622f3e33b8a24eb41fe8145980}{Kd\-Tree\-Ptr {\bfseries normals\-\_\-tree\-\_\-}}\label{classope_1_1_table_object_detector_a71a7a4622f3e33b8a24eb41fe8145980}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a8747834005eca501c1e1cc122cc07b4f}{Kd\-Tree\-Ptr {\bfseries clusters\-\_\-tree\-\_\-}}\label{classope_1_1_table_object_detector_a8747834005eca501c1e1cc122cc07b4f}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a5d442571732be136084623aebc613443}{pcl\-::\-Pass\-Through$<$ Point $>$ {\bfseries pass\-\_\-}}\label{classope_1_1_table_object_detector_a5d442571732be136084623aebc613443}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_afdba8d86851b3f3b084c05075763926c}{pcl\-::\-Voxel\-Grid$<$ Point $>$ {\bfseries grid\-\_\-}}\label{classope_1_1_table_object_detector_afdba8d86851b3f3b084c05075763926c}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_aba39fa3538d7c9dd85ac204f01441afe}{pcl\-::\-Voxel\-Grid$<$ Point $>$ {\bfseries grid\-\_\-objects\-\_\-}}\label{classope_1_1_table_object_detector_aba39fa3538d7c9dd85ac204f01441afe}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a02b8389a3f15a5e417e53ef25733c04c}{pcl\-::\-Normal\-Estimation$<$ Point, \\*
+pcl\-::\-Normal $>$ {\bfseries n3d\-\_\-}}\label{classope_1_1_table_object_detector_a02b8389a3f15a5e417e53ef25733c04c}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a55a4449206dc7555ab35de306fd91a5b}{pcl\-::\-S\-A\-C\-Segmentation\-From\-Normals\\*
+$<$ Point, pcl\-::\-Normal $>$ {\bfseries seg\-\_\-}}\label{classope_1_1_table_object_detector_a55a4449206dc7555ab35de306fd91a5b}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a2b13db7cc8c66416c14f9b1da2ca6bff}{pcl\-::\-Project\-Inliers$<$ Point $>$ {\bfseries proj\-\_\-}}\label{classope_1_1_table_object_detector_a2b13db7cc8c66416c14f9b1da2ca6bff}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a34f4ce60566243e732cad8de655f7fa8}{pcl\-::\-Convex\-Hull$<$ Point $>$ {\bfseries hull\-\_\-}}\label{classope_1_1_table_object_detector_a34f4ce60566243e732cad8de655f7fa8}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a7fd8198160da041952310c86ba726e2a}{pcl\-::\-Extract\-Polygonal\-Prism\-Data\\*
+$<$ Point $>$ {\bfseries prism\-\_\-}}\label{classope_1_1_table_object_detector_a7fd8198160da041952310c86ba726e2a}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a1c754db95579eb439bdfa11a62465b11}{pcl\-::\-Euclidean\-Cluster\-Extraction\\*
+$<$ Point $>$ {\bfseries cluster\-\_\-}}\label{classope_1_1_table_object_detector_a1c754db95579eb439bdfa11a62465b11}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a94aeffbc15661bfcd390877617ae944c}{double {\bfseries downsample\-\_\-leaf\-\_\-}}\label{classope_1_1_table_object_detector_a94aeffbc15661bfcd390877617ae944c}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a9eb97baefe2b467ddcf6d27d747efb5a}{double {\bfseries downsample\-\_\-leaf\-\_\-objects\-\_\-}}\label{classope_1_1_table_object_detector_a9eb97baefe2b467ddcf6d27d747efb5a}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_aaba6197fcf22ba393772ecea77de6557}{int {\bfseries k\-\_\-}}\label{classope_1_1_table_object_detector_aaba6197fcf22ba393772ecea77de6557}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_ad5a557885d80bab444b1d6de950e9413}{double {\bfseries min\-\_\-z\-\_\-bounds\-\_\-}}\label{classope_1_1_table_object_detector_ad5a557885d80bab444b1d6de950e9413}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a4548cd5110ce09385d5d72ce7f298ff0}{double {\bfseries max\-\_\-z\-\_\-bounds\-\_\-}}\label{classope_1_1_table_object_detector_a4548cd5110ce09385d5d72ce7f298ff0}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a52aafc7c57b0bdb6a03ad9b770128c12}{double {\bfseries sac\-\_\-distance\-\_\-threshold\-\_\-}}\label{classope_1_1_table_object_detector_a52aafc7c57b0bdb6a03ad9b770128c12}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a197c829cd6273c7c0e5ec32cbd5250d4}{double {\bfseries normal\-\_\-distance\-\_\-weight\-\_\-}}\label{classope_1_1_table_object_detector_a197c829cd6273c7c0e5ec32cbd5250d4}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_abc650a83fb2cb134f3b8f07a9956f05b}{double {\bfseries object\-\_\-min\-\_\-height\-\_\-}}\label{classope_1_1_table_object_detector_abc650a83fb2cb134f3b8f07a9956f05b}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_ade96967096e0952aedece48548bab877}{double {\bfseries object\-\_\-max\-\_\-height\-\_\-}}\label{classope_1_1_table_object_detector_ade96967096e0952aedece48548bab877}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_ae014fe0bb77e7ce5bd91385ebcf15b3e}{double {\bfseries object\-\_\-cluster\-\_\-tolerance\-\_\-}}\label{classope_1_1_table_object_detector_ae014fe0bb77e7ce5bd91385ebcf15b3e}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_af9b7b8a90ce7890943413be4b7af344e}{double {\bfseries object\-\_\-cluster\-\_\-min\-\_\-size\-\_\-}}\label{classope_1_1_table_object_detector_af9b7b8a90ce7890943413be4b7af344e}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a087621e5a4878ea801c8b2c5a825a530}{double {\bfseries m\-\_\-max\-\_\-dist\-\_\-to\-\_\-plane}}\label{classope_1_1_table_object_detector_a087621e5a4878ea801c8b2c5a825a530}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a5e54568307c9f74a02defbd948a3fa10}{Point\-Cloud\-Const\-Ptr {\bfseries cloud\-\_\-}}\label{classope_1_1_table_object_detector_a5e54568307c9f74a02defbd948a3fa10}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a2bc0780f5f8977480ef0e8070a791fed}{Point\-Cloud\-Const\-Ptr {\bfseries cloud\-\_\-filtered\-\_\-}}\label{classope_1_1_table_object_detector_a2bc0780f5f8977480ef0e8070a791fed}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_aa2f19081a343db20768d7efbed217509}{Point\-Cloud\-Const\-Ptr {\bfseries cloud\-\_\-downsampled\-\_\-}}\label{classope_1_1_table_object_detector_aa2f19081a343db20768d7efbed217509}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a7fd0ce88c1e193b5e5e974a78db473ea}{pcl\-::\-Point\-Cloud$<$ pcl\-::\-Normal $>$\\*
+\-::Const\-Ptr {\bfseries cloud\-\_\-normals\-\_\-}}\label{classope_1_1_table_object_detector_a7fd0ce88c1e193b5e5e974a78db473ea}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_abf292c8faabbf627c815a42047aadb4b}{pcl\-::\-Point\-Indices\-::\-Const\-Ptr {\bfseries table\-\_\-inliers\-\_\-}}\label{classope_1_1_table_object_detector_abf292c8faabbf627c815a42047aadb4b}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a365c884cd5b5c613ffce412ba27fc56f}{pcl\-::\-Model\-Coefficients\-::\-Const\-Ptr {\bfseries table\-\_\-coefficients\-\_\-}}\label{classope_1_1_table_object_detector_a365c884cd5b5c613ffce412ba27fc56f}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_aad108e73a8d401b1d4668100b82b7a72}{Point\-Cloud\-Const\-Ptr {\bfseries table\-\_\-projected\-\_\-}}\label{classope_1_1_table_object_detector_aad108e73a8d401b1d4668100b82b7a72}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a830f74fc24908512118a61e44cd6ea48}{Point\-Cloud\-Const\-Ptr {\bfseries table\-\_\-hull\-\_\-}}\label{classope_1_1_table_object_detector_a830f74fc24908512118a61e44cd6ea48}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a091e36592c87ef3b8f3bb77932c7e617}{Point\-Cloud\-Const\-Ptr {\bfseries cloud\-\_\-objects\-\_\-}}\label{classope_1_1_table_object_detector_a091e36592c87ef3b8f3bb77932c7e617}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a4330bb190856fa4adef141e4c2bc36f0}{Point\-Cloud\-Const\-Ptr {\bfseries cloud\-\_\-objects\-\_\-downsampled\-\_\-}}\label{classope_1_1_table_object_detector_a4330bb190856fa4adef141e4c2bc36f0}
+
+\item 
+\hypertarget{classope_1_1_table_object_detector_a253c42aaeaa008699dabe7177268104e}{\hyperlink{classope_1_1_plane}{Plane} \hyperlink{classope_1_1_table_object_detector_a253c42aaeaa008699dabe7177268104e}{m\-\_\-plane}}\label{classope_1_1_table_object_detector_a253c42aaeaa008699dabe7177268104e}
+
+\begin{DoxyCompactList}\small\item\em Represents the table plane. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_table_object_detector_a518a0f080f217de7f553e25ba142174f}{std\-::vector$<$ Point\-Vector $>$ \hyperlink{classope_1_1_table_object_detector_a518a0f080f217de7f553e25ba142174f}{m\-\_\-object\-\_\-clusters}}\label{classope_1_1_table_object_detector_a518a0f080f217de7f553e25ba142174f}
+
+\begin{DoxyCompactList}\small\item\em The object cluster which are found after detection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Point\-Type$>$class ope\-::\-Table\-Object\-Detector$<$ Point\-Type $>$}
+
+Detects clusters lying on a flat table. 
+
+\begin{DoxyNote}{Note}
+This class is adapted from ntk's \hyperlink{classope_1_1_table_object_detector}{Table\-Object\-Detector} 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Ensure that the table is large enough to be distinguished from the ground plane 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Object\-Pose\-Estimation/Table\-Object\-Detector.\-h\item 
+Object\-Pose\-Estimation/\hyperlink{_table_object_detector_8hpp}{Table\-Object\-Detector.\-hpp}\end{DoxyCompactItemize}

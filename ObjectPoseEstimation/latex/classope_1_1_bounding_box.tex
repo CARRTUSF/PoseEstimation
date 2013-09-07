@@ -1,0 +1,86 @@
+\hypertarget{classope_1_1_bounding_box}{\section{ope\-:\-:Bounding\-Box Class Reference}
+\label{classope_1_1_bounding_box}\index{ope\-::\-Bounding\-Box@{ope\-::\-Bounding\-Box}}
+}
+
+
+Defines a 3\-D bounding box around a point cloud.  
+
+
+
+
+{\ttfamily \#include $<$Table\-Object\-Modeler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_bounding_box_a6bf3cd1ea890ce82a3b0c3cd0ded0011}{{\bfseries Bounding\-Box} (float \-\_\-min\-X, float \-\_\-max\-X, float \-\_\-min\-Y, float \-\_\-max\-Y, float \-\_\-min\-Z, float \-\_\-max\-Z, float \-\_\-w, float \-\_\-h, float \-\_\-d)}\label{classope_1_1_bounding_box_a6bf3cd1ea890ce82a3b0c3cd0ded0011}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a3be3ab4152d3a74617b681639caf1533}{bool {\bfseries is\-Empty} () const }\label{classope_1_1_bounding_box_a3be3ab4152d3a74617b681639caf1533}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_ae59647aa648e2c25fdca282e21eed6ee}{pcl\-::\-Point\-X\-Y\-Z {\bfseries centroid} () const }\label{classope_1_1_bounding_box_ae59647aa648e2c25fdca282e21eed6ee}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a340f9d4d01df6231dca2e0b89318f5da}{bool {\bfseries is\-Point\-Inside} (const pcl\-::\-Point\-X\-Y\-Z \&p) const }\label{classope_1_1_bounding_box_a340f9d4d01df6231dca2e0b89318f5da}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_aacda9c1987dd5003393119449d805da1}{bool {\bfseries is\-Point\-Inside2\-D} (const int \&x, const int \&y)}\label{classope_1_1_bounding_box_aacda9c1987dd5003393119449d805da1}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_abb898c6e0512417124625bb34f6228bd}{float {\bfseries volume} () const }\label{classope_1_1_bounding_box_abb898c6e0512417124625bb34f6228bd}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a055f9433ae118e98d94e86b88e0f0880}{void {\bfseries update} (float x, float y, float z)}\label{classope_1_1_bounding_box_a055f9433ae118e98d94e86b88e0f0880}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a0cf6e329ffe05c4b71b0300b872dad3a}{int {\bfseries x\-Pos} () const }\label{classope_1_1_bounding_box_a0cf6e329ffe05c4b71b0300b872dad3a}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a07a6132049d6971095055f5b65882117}{int {\bfseries y\-Pos} () const }\label{classope_1_1_bounding_box_a07a6132049d6971095055f5b65882117}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_bounding_box_a95b0720336cc81aadc978e5c11405148}{float {\bfseries min\-X}}\label{classope_1_1_bounding_box_a95b0720336cc81aadc978e5c11405148}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_ade6dc36e3fbc321eb3d3fe1617925159}{float {\bfseries max\-X}}\label{classope_1_1_bounding_box_ade6dc36e3fbc321eb3d3fe1617925159}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_ae18be0b0185ed67326cf9a39f0cdd0f6}{float {\bfseries min\-Y}}\label{classope_1_1_bounding_box_ae18be0b0185ed67326cf9a39f0cdd0f6}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a272dae0d513262a681a8de54be9effcb}{float {\bfseries max\-Y}}\label{classope_1_1_bounding_box_a272dae0d513262a681a8de54be9effcb}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a2261b2b2ce3057a9bf939aee4d387ce3}{float {\bfseries min\-Z}}\label{classope_1_1_bounding_box_a2261b2b2ce3057a9bf939aee4d387ce3}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a2ce0b328c409f9c9454e304f77b10eaf}{float {\bfseries max\-Z}}\label{classope_1_1_bounding_box_a2ce0b328c409f9c9454e304f77b10eaf}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a3b6a6847f70a6d054a1841f0dd2b30c3}{float {\bfseries width}}\label{classope_1_1_bounding_box_a3b6a6847f70a6d054a1841f0dd2b30c3}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_a999b015ecb13d57634470146d764456c}{float {\bfseries height}}\label{classope_1_1_bounding_box_a999b015ecb13d57634470146d764456c}
+
+\item 
+\hypertarget{classope_1_1_bounding_box_ae4474d7fecaf9b34412dd3daafa9f6db}{float {\bfseries depth}}\label{classope_1_1_bounding_box_ae4474d7fecaf9b34412dd3daafa9f6db}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_bounding_box_af049bc89fced9364b7d6e2042766a87e}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classope_1_1_bounding_box}{Bounding\-Box} \&b)}\label{classope_1_1_bounding_box_af049bc89fced9364b7d6e2042766a87e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines a 3\-D bounding box around a point cloud. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Object\-Pose\-Estimation/Table\-Object\-Modeler.\-h\end{DoxyCompactItemize}

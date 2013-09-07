@@ -1,0 +1,65 @@
+\hypertarget{classope_1_1_point_cloud_capture}{\section{ope\-:\-:Point\-Cloud\-Capture Class Reference}
+\label{classope_1_1_point_cloud_capture}\index{ope\-::\-Point\-Cloud\-Capture@{ope\-::\-Point\-Cloud\-Capture}}
+}
+
+
+Captures X\-Y\-Z\-R\-G\-B point clouds from the Kinect.  
+
+
+
+
+{\ttfamily \#include $<$Point\-Cloud\-Capture.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classope_1_1_point_cloud_capture_a21c28f5e4d669de00187741d0e9c7e6f}{run} (pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B $>$ \&pt\-Cloud)
+\begin{DoxyCompactList}\small\item\em Captures an X\-Y\-Z\-R\-G\-B\-A point cloud from the Kinect and stores an X\-Y\-Z\-R\-G\-B cloud. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_point_cloud_capture_ac23a878e95bc7a5d40ce95d919eab8d6}{void \hyperlink{classope_1_1_point_cloud_capture_ac23a878e95bc7a5d40ce95d919eab8d6}{cloud\-Callback} (const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B\-A $>$\-::Const\-Ptr \&cloud)}\label{classope_1_1_point_cloud_capture_ac23a878e95bc7a5d40ce95d919eab8d6}
+
+\begin{DoxyCompactList}\small\item\em Callback function that is used to read X\-Y\-Z\-R\-G\-B point clouds from the Kinect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_point_cloud_capture_a2cd811475d75d32c6cd0cd33cf728567}{pcl\-::\-Point\-Cloud\\*
+$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B\-A $>$\\*
+\-::Const\-Ptr {\bfseries pt\-Cloud\-Ptr}}\label{classope_1_1_point_cloud_capture_a2cd811475d75d32c6cd0cd33cf728567}
+
+\item 
+\hypertarget{classope_1_1_point_cloud_capture_add3d670a69bec191b3c3c0552b9d7223}{pcl\-::\-Point\-Cloud\\*
+$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B\-A $>$\-::Ptr {\bfseries filtered\-Pt\-Cloud\-Ptr}}\label{classope_1_1_point_cloud_capture_add3d670a69bec191b3c3c0552b9d7223}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Captures X\-Y\-Z\-R\-G\-B point clouds from the Kinect. 
+
+\begin{DoxyNote}{Note}
+The coordinate system for the captured point clouds is as follows\-: x-\/axis -\/$>$ right, y-\/axis -\/$>$ down, z-\/axis -\/$>$ points into scene.
+\end{DoxyNote}
+Also, a Pass\-Through filter is applied to the captured point cloud so that the target area is within a specified range which is adjustable 
+
+\subsection{Member Function Documentation}
+\hypertarget{classope_1_1_point_cloud_capture_a21c28f5e4d669de00187741d0e9c7e6f}{\index{ope\-::\-Point\-Cloud\-Capture@{ope\-::\-Point\-Cloud\-Capture}!run@{run}}
+\index{run@{run}!ope::PointCloudCapture@{ope\-::\-Point\-Cloud\-Capture}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Point\-Cloud\-Capture\-::run (
+\begin{DoxyParamCaption}
+\item[{pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z\-R\-G\-B $>$ \&}]{pt\-Cloud}
+\end{DoxyParamCaption}
+)}}\label{classope_1_1_point_cloud_capture_a21c28f5e4d669de00187741d0e9c7e6f}
+
+
+Captures an X\-Y\-Z\-R\-G\-B\-A point cloud from the Kinect and stores an X\-Y\-Z\-R\-G\-B cloud. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$pt\-Cloud$>$} & -\/ holds the captured Point\-X\-Y\-Z\-R\-G\-B point cloud \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Object\-Pose\-Estimation/Point\-Cloud\-Capture.\-h\item 
+Object\-Pose\-Estimation/Point\-Cloud\-Capture.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{classope_1_1_object_model_generator}{\section{ope\-:\-:Object\-Model\-Generator$<$ Point\-Type $>$ Class Template Reference}
+\label{classope_1_1_object_model_generator}\index{ope\-::\-Object\-Model\-Generator$<$ Point\-Type $>$@{ope\-::\-Object\-Model\-Generator$<$ Point\-Type $>$}}
+}
+
+
+Generate point cloud models for objects detected on a table.  
+
+
+
+
+{\ttfamily \#include $<$Table\-Object\-Modeler.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_object_model_generator_ab297a5f7b5eb64f6f6223ed60e6a1147}{typedef Point\-Cloud\-::\-Ptr {\bfseries Point\-Cloud\-Ptr}}\label{classope_1_1_object_model_generator_ab297a5f7b5eb64f6f6223ed60e6a1147}
+
+\item 
+\hypertarget{classope_1_1_object_model_generator_a4ca640e5a8673e2c9190808799bef230}{typedef Point\-Cloud\-::\-Const\-Ptr {\bfseries Point\-Cloud\-Const\-Ptr}}\label{classope_1_1_object_model_generator_a4ca640e5a8673e2c9190808799bef230}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_object_model_generator_a7997c862f323103eba38e0fbaf4c4b1f}{{\bfseries Object\-Model\-Generator} (Point\-Cloud\-Const\-Ptr pt\-Cloud\-Ptr)}\label{classope_1_1_object_model_generator_a7997c862f323103eba38e0fbaf4c4b1f}
+
+\item 
+\hypertarget{classope_1_1_object_model_generator_ab94cb336926cc25dea8ec4490ca52ce0}{void {\bfseries set\-Source\-Cloud} (Point\-Cloud\-Const\-Ptr pt\-Cloud\-Ptr)}\label{classope_1_1_object_model_generator_ab94cb336926cc25dea8ec4490ca52ce0}
+
+\item 
+\hypertarget{classope_1_1_object_model_generator_ae6d0cf0637bdb975ca9e097f2e1d5139}{bool {\bfseries generate\-Object\-Models} ()}\label{classope_1_1_object_model_generator_ae6d0cf0637bdb975ca9e097f2e1d5139}
+
+\item 
+\hypertarget{classope_1_1_object_model_generator_a04dc4e3a7280759f42454ae3d389b962}{std\-::vector$<$ \hyperlink{classope_1_1_bounding_box}{Bounding\-Box} $>$ {\bfseries get\-Bounding\-Boxes} ()}\label{classope_1_1_object_model_generator_a04dc4e3a7280759f42454ae3d389b962}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_object_model_generator_a7b1e2e114d902b407a25960d854fbde3}{E\-I\-G\-E\-N\-\_\-\-M\-A\-K\-E\-\_\-\-A\-L\-I\-G\-N\-E\-D\-\_\-\-O\-P\-E\-R\-A\-T\-O\-R\-\_\-\-N\-E\-W \\*
+typedef pcl\-::\-Point\-Cloud\\*
+$<$ Point\-Type $>$ {\bfseries Point\-Cloud}}\label{classope_1_1_object_model_generator_a7b1e2e114d902b407a25960d854fbde3}
+
+\item 
+std\-::vector$<$ \hyperlink{classope_1_1_table_object_model}{Table\-Object\-Model}\\*
+$<$ Point\-Type $>$\\*
+, Eigen\-::aligned\-\_\-allocator\\*
+$<$ \hyperlink{classope_1_1_table_object_model}{Table\-Object\-Model}$<$ Point\-Type $>$ $>$ $>$ \hyperlink{classope_1_1_object_model_generator_acfe3286278478e32bb2a4e7880f777b9}{objects}
+\begin{DoxyCompactList}\small\item\em List of object models. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_object_model_generator_a95b385ae6a94c87d4e8e89a2a6d6b511}{Point\-Cloud\-Const\-Ptr {\bfseries src\-Cloud\-Ptr}}\label{classope_1_1_object_model_generator_a95b385ae6a94c87d4e8e89a2a6d6b511}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Point\-Type$>$class ope\-::\-Object\-Model\-Generator$<$ Point\-Type $>$}
+
+Generate point cloud models for objects detected on a table. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classope_1_1_object_model_generator_acfe3286278478e32bb2a4e7880f777b9}{\index{ope\-::\-Object\-Model\-Generator@{ope\-::\-Object\-Model\-Generator}!objects@{objects}}
+\index{objects@{objects}!ope::ObjectModelGenerator@{ope\-::\-Object\-Model\-Generator}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Point\-Type $>$ std\-::vector$<$ {\bf Table\-Object\-Model}$<$ Point\-Type $>$, Eigen\-::aligned\-\_\-allocator$<$ {\bf Table\-Object\-Model}$<$ Point\-Type $>$ $>$ $>$ {\bf ope\-::\-Object\-Model\-Generator}$<$ Point\-Type $>$\-::objects}}\label{classope_1_1_object_model_generator_acfe3286278478e32bb2a4e7880f777b9}
+
+
+List of object models. 
+
+\begin{DoxyNote}{Note}
+This declaration is rather messy but it is required if we desire to use A\-N\-Y\-T\-H\-I\-N\-G Eigen. All Eigen objects are 16-\/byte aligned. Therefore we must use Eigen's memory allocator when using standard containers. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Object\-Pose\-Estimation/Table\-Object\-Modeler.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\hypertarget{classope_1_1_plane}{\section{ope\-:\-:Plane Class Reference}
+\label{classope_1_1_plane}\index{ope\-::\-Plane@{ope\-::\-Plane}}
+}
+
+
+Defines the properties of a plane.  
+
+
+
+
+{\ttfamily \#include $<$Plane.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_plane_aa2dec035114f64d9f4e50827f9540c54}{{\bfseries Plane} (double \hyperlink{classope_1_1_plane_a8cbbbc52cb37c0e2958baad8d2916814}{a}, double b, double c, double d)}\label{classope_1_1_plane_aa2dec035114f64d9f4e50827f9540c54}
+
+\item 
+\hypertarget{classope_1_1_plane_a88dc981fe5bf4ef8bf574548d947d796}{\hyperlink{classope_1_1_plane_a88dc981fe5bf4ef8bf574548d947d796}{Plane} (const pcl\-::\-Point\-X\-Y\-Z \&\hyperlink{classope_1_1_plane_a8917005ae532501280c87222dfccd140}{normal}, const pcl\-::\-Point\-X\-Y\-Z \&p)}\label{classope_1_1_plane_a88dc981fe5bf4ef8bf574548d947d796}
+
+\begin{DoxyCompactList}\small\item\em Construct a plane from a normal vector and a point. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_plane_aee9ace21e6040684f05510b69948e68a}{\hyperlink{classope_1_1_plane_aee9ace21e6040684f05510b69948e68a}{Plane} ()}\label{classope_1_1_plane_aee9ace21e6040684f05510b69948e68a}
+
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classope_1_1_plane_a9324f303beccf7ec9c6d3a5e371b7ca7}{is\-Valid} () const 
+\begin{DoxyCompactList}\small\item\em Determines whether or not this is a valid plane. \end{DoxyCompactList}\item 
+pcl\-::\-Point\-X\-Y\-Z \hyperlink{classope_1_1_plane_a8917005ae532501280c87222dfccd140}{normal} () const 
+\begin{DoxyCompactList}\small\item\em Gets the normal vector that defines this plane. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_plane_a3c838097251cdaaf0248cc945eb99abc}{void \hyperlink{classope_1_1_plane_a3c838097251cdaaf0248cc945eb99abc}{set} (double a\-\_\-, double b\-\_\-, double c\-\_\-, double d\-\_\-)}\label{classope_1_1_plane_a3c838097251cdaaf0248cc945eb99abc}
+
+\begin{DoxyCompactList}\small\item\em Sets the parameters of the plane. \end{DoxyCompactList}\item 
+pcl\-::\-Point\-X\-Y\-Z \hyperlink{classope_1_1_plane_af6da1c5f2f479ac9b121fe429d4162a3}{intersection\-With\-Line} (const pcl\-::\-Point\-X\-Y\-Z \&p1, const pcl\-::\-Point\-X\-Y\-Z \&p2) const 
+\begin{DoxyCompactList}\small\item\em Determines whether this plane intersects with the specified line given by the parameters. \end{DoxyCompactList}\item 
+float \hyperlink{classope_1_1_plane_a6d49a848e73034756aa6037b330e5a68}{distance\-To\-Plane} (const pcl\-::\-Point\-X\-Y\-Z \&p) const 
+\begin{DoxyCompactList}\small\item\em Determines a point's distance from the plane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classope_1_1_plane_a8cbbbc52cb37c0e2958baad8d2916814}{double \hyperlink{classope_1_1_plane_a8cbbbc52cb37c0e2958baad8d2916814}{a}}\label{classope_1_1_plane_a8cbbbc52cb37c0e2958baad8d2916814}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classope_1_1_plane}{Plane} parameters. \end{DoxyCompactList}\item 
+\hypertarget{classope_1_1_plane_a081441ffbd81e3df5c5626434fb5cb8a}{double {\bfseries b}}\label{classope_1_1_plane_a081441ffbd81e3df5c5626434fb5cb8a}
+
+\item 
+\hypertarget{classope_1_1_plane_ae8a5b7a59971bdd19e45d2096bac4052}{double {\bfseries c}}\label{classope_1_1_plane_ae8a5b7a59971bdd19e45d2096bac4052}
+
+\item 
+\hypertarget{classope_1_1_plane_ada008427bf766969ddf2f0dcea296ebf}{double {\bfseries d}}\label{classope_1_1_plane_ada008427bf766969ddf2f0dcea296ebf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the properties of a plane. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classope_1_1_plane_a6d49a848e73034756aa6037b330e5a68}{\index{ope\-::\-Plane@{ope\-::\-Plane}!distance\-To\-Plane@{distance\-To\-Plane}}
+\index{distance\-To\-Plane@{distance\-To\-Plane}!ope::Plane@{ope\-::\-Plane}}
+\subsubsection[{distance\-To\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}float Plane\-::distance\-To\-Plane (
+\begin{DoxyParamCaption}
+\item[{const pcl\-::\-Point\-X\-Y\-Z \&}]{p}
+\end{DoxyParamCaption}
+) const}}\label{classope_1_1_plane_a6d49a848e73034756aa6037b330e5a68}
+
+
+Determines a point's distance from the plane. 
+
+\begin{DoxyReturn}{Returns}
+Distance from the plane 
+\end{DoxyReturn}
+\hypertarget{classope_1_1_plane_af6da1c5f2f479ac9b121fe429d4162a3}{\index{ope\-::\-Plane@{ope\-::\-Plane}!intersection\-With\-Line@{intersection\-With\-Line}}
+\index{intersection\-With\-Line@{intersection\-With\-Line}!ope::Plane@{ope\-::\-Plane}}
+\subsubsection[{intersection\-With\-Line}]{\setlength{\rightskip}{0pt plus 5cm}pcl\-::\-Point\-X\-Y\-Z Plane\-::intersection\-With\-Line (
+\begin{DoxyParamCaption}
+\item[{const pcl\-::\-Point\-X\-Y\-Z \&}]{p1, }
+\item[{const pcl\-::\-Point\-X\-Y\-Z \&}]{p2}
+\end{DoxyParamCaption}
+) const}}\label{classope_1_1_plane_af6da1c5f2f479ac9b121fe429d4162a3}
+
+
+Determines whether this plane intersects with the specified line given by the parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$p1$>$} & the first point that defines the line \\
+\hline
+{\em $<$p2$>$} & the second point that defines the line \\
+\hline
+\end{DoxyParams}
+\hypertarget{classope_1_1_plane_a9324f303beccf7ec9c6d3a5e371b7ca7}{\index{ope\-::\-Plane@{ope\-::\-Plane}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!ope::Plane@{ope\-::\-Plane}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Plane\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classope_1_1_plane_a9324f303beccf7ec9c6d3a5e371b7ca7}
+
+
+Determines whether or not this is a valid plane. 
+
+\begin{DoxyReturn}{Returns}
+true if it is valid 
+\end{DoxyReturn}
+\hypertarget{classope_1_1_plane_a8917005ae532501280c87222dfccd140}{\index{ope\-::\-Plane@{ope\-::\-Plane}!normal@{normal}}
+\index{normal@{normal}!ope::Plane@{ope\-::\-Plane}}
+\subsubsection[{normal}]{\setlength{\rightskip}{0pt plus 5cm}pcl\-::\-Point\-X\-Y\-Z Plane\-::normal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classope_1_1_plane_a8917005ae532501280c87222dfccd140}
+
+
+Gets the normal vector that defines this plane. 
+
+\begin{DoxyReturn}{Returns}
+the x, y, \& z values of the plane's normal 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Object\-Pose\-Estimation/Plane.\-h\item 
+Object\-Pose\-Estimation/Plane.\-cpp\end{DoxyCompactItemize}

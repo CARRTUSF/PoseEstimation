@@ -1,0 +1,294 @@
+\hypertarget{namespaceope}{\section{ope Namespace Reference}
+\label{namespaceope}\index{ope@{ope}}
+}
+
+
+Namespace {\itshape ope} that contains all the functions and types relevant for estimating an object's pose.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classope_1_1_m_point}{M\-Point}
+\begin{DoxyCompactList}\small\item\em Defines a 3\-D point that would be used by the minimization routines herein. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_o_p_e_settings}{O\-P\-E\-Settings}
+\begin{DoxyCompactList}\small\item\em User-\/customizable program settings. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_object_pose_estimator}{Object\-Pose\-Estimator}
+\begin{DoxyCompactList}\small\item\em Performs object pose estimation using the parametric superquadric shape model. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_plane}{Plane}
+\begin{DoxyCompactList}\small\item\em Defines the properties of a plane. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_point_cloud_capture}{Point\-Cloud\-Capture}
+\begin{DoxyCompactList}\small\item\em Captures X\-Y\-Z\-R\-G\-B point clouds from the Kinect. \end{DoxyCompactList}\item 
+struct \hyperlink{structope_1_1_s_q_fitting_thread_info}{S\-Q\-Fitting\-Thread\-Info}
+\begin{DoxyCompactList}\small\item\em Holds information relevant for multi-\/threaded S\-Q processing. \end{DoxyCompactList}\item 
+struct \hyperlink{structope_1_1_parameter_limits}{Parameter\-Limits}
+\begin{DoxyCompactList}\small\item\em Defines the upper and lower limits for superquadric parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{structope_1_1_minimization_parameters}{Minimization\-Parameters}
+\begin{DoxyCompactList}\small\item\em Defines the minimization parameters that would be used for minimization during S\-Q fitting. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters}
+\begin{DoxyCompactList}\small\item\em Defines the Superquadric parameters used for object pose estimation. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_table_object_detector}{Table\-Object\-Detector}
+\begin{DoxyCompactList}\small\item\em Detects clusters lying on a flat table. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_bounding_box}{Bounding\-Box}
+\begin{DoxyCompactList}\small\item\em Defines a 3\-D bounding box around a point cloud. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_table_object_model}{Table\-Object\-Model}
+\begin{DoxyCompactList}\small\item\em Models object hypotheses found on a table. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_object_model_generator}{Object\-Model\-Generator}
+\begin{DoxyCompactList}\small\item\em Generate point cloud models for objects detected on a table. \end{DoxyCompactList}\item 
+class \hyperlink{classope_1_1_utils}{Utils}
+\begin{DoxyCompactList}\small\item\em Performs frequently used utility functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceope_aaa82c1f08a80fa2e3727b273aac45404}{typedef double {\bfseries glmma} \mbox{[}mma\mbox{]}}\label{namespaceope_aaa82c1f08a80fa2e3727b273aac45404}
+
+\item 
+\hypertarget{namespaceope_aba2d1518d2ad25f7c7cfafaa8897c58d}{typedef glmma {\bfseries glnparam}}\label{namespaceope_aba2d1518d2ad25f7c7cfafaa8897c58d}
+
+\item 
+\hypertarget{namespaceope_a44adc8ee9bbf2c365579025040aa9488}{typedef int {\bfseries gllista} \mbox{[}mma\mbox{]}}\label{namespaceope_a44adc8ee9bbf2c365579025040aa9488}
+
+\item 
+\hypertarget{namespaceope_a665dbc282e3686546e1a290f67059038}{typedef double {\bfseries glcovar} \mbox{[}mma\mbox{]}\mbox{[}mma\mbox{]}}\label{namespaceope_a665dbc282e3686546e1a290f67059038}
+
+\item 
+\hypertarget{namespaceope_a18a3eb95ce3436ca30f72bae69d03882}{typedef glcovar {\bfseries glnalbynal}}\label{namespaceope_a18a3eb95ce3436ca30f72bae69d03882}
+
+\item 
+\hypertarget{namespaceope_a997abc9c2d243dafcc0ecf82792b41a0}{typedef glcovar {\bfseries glncabynca}}\label{namespaceope_a997abc9c2d243dafcc0ecf82792b41a0}
+
+\item 
+\hypertarget{namespaceope_ab9df7c0fd9b55c15b6a1cfb78a93298c}{typedef glcovar {\bfseries glnpbynp}}\label{namespaceope_ab9df7c0fd9b55c15b6a1cfb78a93298c}
+
+\item 
+\hypertarget{namespaceope_a2529f6f2f2616fe5fc7249242686542d}{typedef glcovar {\bfseries glnpbymp}}\label{namespaceope_a2529f6f2f2616fe5fc7249242686542d}
+
+\item 
+\hypertarget{namespaceope_a3b23cb9236a52fd2f3f272d66d0c9c0b}{typedef std\-::vector$<$ double $>$ {\bfseries glndata}}\label{namespaceope_a3b23cb9236a52fd2f3f272d66d0c9c0b}
+
+\item 
+\hypertarget{namespaceope_a80599c3cad5832a4cd51f5f2b5eaf28a}{typedef std\-::vector$<$ \hyperlink{classope_1_1_m_point}{M\-Point} $>$ {\bfseries glndata2}}\label{namespaceope_a80599c3cad5832a4cd51f5f2b5eaf28a}
+
+\item 
+\hypertarget{namespaceope_a77010c553b8b64bf199e9bf40410e5e9}{typedef gllista {\bfseries glnp}}\label{namespaceope_a77010c553b8b64bf199e9bf40410e5e9}
+
+\item 
+\hypertarget{namespaceope_a05344384834d0e0c36490998db356af7}{typedef double {\bfseries glmartrix} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}}\label{namespaceope_a05344384834d0e0c36490998db356af7}
+
+\item 
+\hypertarget{namespaceope_a716ace4d47672efc4086c9bade4ae355}{typedef struct \\*
+\hyperlink{structope_1_1_s_q_fitting_thread_info}{ope\-::\-S\-Q\-Fitting\-Thread\-Info} \hyperlink{namespaceope_a716ace4d47672efc4086c9bade4ae355}{S\-Q\-Fitting\-Thread\-Info}}\label{namespaceope_a716ace4d47672efc4086c9bade4ae355}
+
+\begin{DoxyCompactList}\small\item\em Holds information relevant for multi-\/threaded S\-Q processing. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a14e18db1b834d879f8aa13323c1baba0}{typedef enum \hyperlink{namespaceope_a369d89d74d4649418822f9acefc317c6}{ope\-::\-Parameter\-Type} \hyperlink{namespaceope_a14e18db1b834d879f8aa13323c1baba0}{Parameter\-Type}}\label{namespaceope_a14e18db1b834d879f8aa13323c1baba0}
+
+\begin{DoxyCompactList}\small\item\em Defines the numerical property of a superquadric parameter. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_afc56254b7c9997afcb304630a5a735c5}{typedef struct \hyperlink{structope_1_1_parameter_limits}{ope\-::\-Parameter\-Limits} \hyperlink{namespaceope_afc56254b7c9997afcb304630a5a735c5}{Parameter\-Limits}}\label{namespaceope_afc56254b7c9997afcb304630a5a735c5}
+
+\begin{DoxyCompactList}\small\item\em Defines the upper and lower limits for superquadric parameters. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a2eb8ddd96a375848ff9ec424f433bd3b}{typedef struct \\*
+\hyperlink{structope_1_1_minimization_parameters}{ope\-::\-Minimization\-Parameters} \hyperlink{namespaceope_a2eb8ddd96a375848ff9ec424f433bd3b}{Minimization\-Parameters}}\label{namespaceope_a2eb8ddd96a375848ff9ec424f433bd3b}
+
+\begin{DoxyCompactList}\small\item\em Defines the minimization parameters that would be used for minimization during S\-Q fitting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceope_a369d89d74d4649418822f9acefc317c6}{Parameter\-Type} \{ \\*
+{\bfseries U\-N\-C\-H\-A\-N\-G\-E\-D} = 1, 
+{\bfseries B\-O\-U\-N\-D\-E\-D}, 
+{\bfseries U\-N\-L\-I\-M\-I\-T\-E\-D}, 
+{\bfseries N\-O\-T\-\_\-\-U\-S\-E\-D}, 
+\\*
+{\bfseries O\-F\-F\-S\-E\-T}
+ \}
+\begin{DoxyCompactList}\small\item\em Defines the numerical property of a superquadric parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceope_a3168ecd2c0e76a877247c1dc042fc29a}{double \hyperlink{namespaceope_a3168ecd2c0e76a877247c1dc042fc29a}{mylog} (double x)}\label{namespaceope_a3168ecd2c0e76a877247c1dc042fc29a}
+
+\begin{DoxyCompactList}\small\item\em Calculates the base-\/10 logarithm of x. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_af362a9d70a7e98149b5ac0c08d7cac9e}{double \hyperlink{namespaceope_af362a9d70a7e98149b5ac0c08d7cac9e}{mypow} (double x, double y)}\label{namespaceope_af362a9d70a7e98149b5ac0c08d7cac9e}
+
+\begin{DoxyCompactList}\small\item\em Raises x to the power of y. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a8b7caa55d22fca92daa7da774f6a6145}{double \hyperlink{namespaceope_a8b7caa55d22fca92daa7da774f6a6145}{sqr} (double x)}\label{namespaceope_a8b7caa55d22fca92daa7da774f6a6145}
+
+\begin{DoxyCompactList}\small\item\em Calculates the square root of x. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceope_a3f02990e29d089b0653c18c5c3ef50a2}{error\-Func} (const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&cloud, \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&sq\-Params)
+\begin{DoxyCompactList}\small\item\em Calculates the average error of fit of superquadric parameters. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a9f066f6bda7434d4c15b56b774c627fc}{double \hyperlink{namespaceope_a9f066f6bda7434d4c15b56b774c627fc}{quality\-Of\-Fit} (pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&cloud, \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&sq\-Params)}\label{namespaceope_a9f066f6bda7434d4c15b56b774c627fc}
+
+\begin{DoxyCompactList}\small\item\em Determines the total error (quality) of fit of superquadric parameters. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a0d08e8b4661611bab654c2d70539a73d}{double {\bfseries funcs} (double x, double y, double z, double rotx\mbox{[}11\mbox{]}, double roty\mbox{[}11\mbox{]}, double rotz\mbox{[}11\mbox{]}, glnparam a, glnparam d\-Fda)}\label{namespaceope_a0d08e8b4661611bab654c2d70539a73d}
+
+\item 
+\hypertarget{namespaceope_a81c36593bff205bd08d55a7bae952c84}{void {\bfseries precomp\-\_\-rot} (glnparam a, double rotx\mbox{[}11\mbox{]}, double roty\mbox{[}11\mbox{]}, double rotz\mbox{[}11\mbox{]})}\label{namespaceope_a81c36593bff205bd08d55a7bae952c84}
+
+\item 
+\hypertarget{namespaceope_afc5e4797a3d9663bdd147862cf5414b8}{double {\bfseries mrqcof} (const glndata2 \&x, glndata F, glndata sig, int ndata, glmma a, gllista lista, int mfit, glcovar alpha, glmma beta, int $\ast$n\-\_\-model, int $\ast$n\-\_\-model\-\_\-acc, double addnoise)}\label{namespaceope_afc5e4797a3d9663bdd147862cf5414b8}
+
+\item 
+\hypertarget{namespaceope_a059aaa453007c4d21e412ce5afd2890a}{int {\bfseries gaussj} (glcovar a, int n, glcovar b)}\label{namespaceope_a059aaa453007c4d21e412ce5afd2890a}
+
+\item 
+\hypertarget{namespaceope_a607d67f7431ed639c8c5702fa004ab36}{double {\bfseries mrqmin\-\_\-init} (const glndata2 \&x, glndata F, glndata sig, int ndata, glmma a, gllista lista, int mfit, glcovar alpha, int nca, int $\ast$n\-\_\-model\-\_\-acc)}\label{namespaceope_a607d67f7431ed639c8c5702fa004ab36}
+
+\item 
+double \hyperlink{namespaceope_a5d543d113e6ec3fa791e317f7fb4477f}{mrqmin} (\hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&prm, const glndata2 \&x, glndata F, glndata sig, int ndata, glmma a, gllista lista, int mfit, glcovar covar, glcovar alpha, double alamda, int $\ast$n\-\_\-model\-\_\-acc)
+\begin{DoxyCompactList}\small\item\em Levenberg Marquadt minimization. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceope_a444748833a4762249ad2034b1a371264}{initialize\-Minimization\-Parameters} (\hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&sq\-Params)
+\begin{DoxyCompactList}\small\item\em Initializes the Levenberg-\/\-Marquadt minimization parameters used for sq estimation. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceope_a2f7f74aa34336a020dde069cf05e8d65}{estimate\-Parameters} (const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&cloud, \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&sq\-Params, int eigen\-Vector)
+\begin{DoxyCompactList}\small\item\em Estimate the parameters of a superquadric from the given point cloud. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceope_a5b321bd75cd22d494f0ead1b3a951145}{estimate\-Parameters\-New} (const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&cloud, \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&sq\-Params, int eigen\-Vector)
+\begin{DoxyCompactList}\small\item\em Estimate the parameters of a superquadric from the given point cloud. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_aa98be6f253d2dccd997036988e0d9d36}{void \hyperlink{namespaceope_aa98be6f253d2dccd997036988e0d9d36}{estimate\-Initial\-Parameters} (pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&cloud, \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&sq\-Params)}\label{namespaceope_aa98be6f253d2dccd997036988e0d9d36}
+
+\begin{DoxyCompactList}\small\item\em Estimate the initial S\-Q parameters based on eigen analysis. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_aa2241fb739990010c773fd46b3722cf6}{double \hyperlink{namespaceope_aa2241fb739990010c773fd46b3722cf6}{recover\-Parameters} (const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&cloud, \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&prm)}\label{namespaceope_aa2241fb739990010c773fd46b3722cf6}
+
+\begin{DoxyCompactList}\small\item\em Recover the parameters of the superquadric that best fits the given point cloud. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceope_a33a980d43bb42f595c8742da80795961}{perform\-Shape\-Fitting} (const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&cloud, \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&init\-Params, \hyperlink{classope_1_1_s_q_parameters}{S\-Q\-Parameters} \&best\-Params)
+\begin{DoxyCompactList}\small\item\em Executes the superquadric shape fitting process on a point cloud and gets the best parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceope_acc118af7990b270118116b8f4f72e0bd}{static float \hyperlink{namespaceope_acc118af7990b270118116b8f4f72e0bd}{minimum\-Tgt\-Depth} = 0.\-2f}\label{namespaceope_acc118af7990b270118116b8f4f72e0bd}
+
+\begin{DoxyCompactList}\small\item\em Minimum depth value for target scene area. Used by the {\ttfamily Pass\-Through} filter. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a8940b4c7eeae8e01e7a85edf154570f1}{static float \hyperlink{namespaceope_a8940b4c7eeae8e01e7a85edf154570f1}{maximum\-Tgt\-Depth} = 1.\-8f}\label{namespaceope_a8940b4c7eeae8e01e7a85edf154570f1}
+
+\begin{DoxyCompactList}\small\item\em Maximum depth value for target scene area. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a59172f3f63dd942c89541b3f5800b3ab}{static float \hyperlink{namespaceope_a59172f3f63dd942c89541b3f5800b3ab}{minimum\-Obj\-Height} = 0.\-01f}\label{namespaceope_a59172f3f63dd942c89541b3f5800b3ab}
+
+\begin{DoxyCompactList}\small\item\em Minimum height of object hypotheses in the scene. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_aaa6d047c71f40cbb4168feada620f20c}{static float \hyperlink{namespaceope_aaa6d047c71f40cbb4168feada620f20c}{maximum\-Obj\-Height} = 0.\-30f}\label{namespaceope_aaa6d047c71f40cbb4168feada620f20c}
+
+\begin{DoxyCompactList}\small\item\em Maximum height of object hypotheses in the scene. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a449dd60d5fb8fd54a7a2abeabf918ca7}{static bool \hyperlink{namespaceope_a449dd60d5fb8fd54a7a2abeabf918ca7}{verbose} = true}\label{namespaceope_a449dd60d5fb8fd54a7a2abeabf918ca7}
+
+\begin{DoxyCompactList}\small\item\em Determines whether status updates are output. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a329355110ed86b61fe7367b63fa72bd4}{static int \hyperlink{namespaceope_a329355110ed86b61fe7367b63fa72bd4}{minimum\-Iterations} = 30}\label{namespaceope_a329355110ed86b61fe7367b63fa72bd4}
+
+\begin{DoxyCompactList}\small\item\em Determines the amount of error minimization iterations for superquadric fitting. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a4913e9b003b9d770a92be33369b86282}{static float \hyperlink{namespaceope_a4913e9b003b9d770a92be33369b86282}{object\-Voxel\-Size} = 0.\-003f}\label{namespaceope_a4913e9b003b9d770a92be33369b86282}
+
+\begin{DoxyCompactList}\small\item\em Size of object voxels used by the Table Object Detector. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_ac5fb81e886ace44291f4013cc1d477ca}{static bool \hyperlink{namespaceope_ac5fb81e886ace44291f4013cc1d477ca}{allow\-Tapering} = false}\label{namespaceope_ac5fb81e886ace44291f4013cc1d477ca}
+
+\begin{DoxyCompactList}\small\item\em Determines whether superquadric shape tapering is allowed when estimating pose. \end{DoxyCompactList}\item 
+\hypertarget{namespaceope_a65b01fb30a5b99971861ad9cf74e9fd4}{double {\bfseries glochisq}}\label{namespaceope_a65b01fb30a5b99971861ad9cf74e9fd4}
+
+\item 
+\hypertarget{namespaceope_ab3e12483568976e219ef898d6b102c0b}{glmma {\bfseries glatry}}\label{namespaceope_ab3e12483568976e219ef898d6b102c0b}
+
+\item 
+\hypertarget{namespaceope_ab1f31b4264baefaa892eed99057d7c57}{glmma {\bfseries glbeta}}\label{namespaceope_ab1f31b4264baefaa892eed99057d7c57}
+
+\item 
+\hypertarget{namespaceope_ad27bde5e2262715f03aadd9f67f60acb}{int {\bfseries i\-\_\-am\-\_\-in\-\_\-trouble}}\label{namespaceope_ad27bde5e2262715f03aadd9f67f60acb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Namespace {\itshape ope} that contains all the functions and types relevant for estimating an object's pose. Namespace where all the Object Pose Estimation functionality resides 
+
+\subsection{Function Documentation}
+\hypertarget{namespaceope_a3f02990e29d089b0653c18c5c3ef50a2}{\index{ope@{ope}!error\-Func@{error\-Func}}
+\index{error\-Func@{error\-Func}!ope@{ope}}
+\subsubsection[{error\-Func}]{\setlength{\rightskip}{0pt plus 5cm}double ope\-::error\-Func (
+\begin{DoxyParamCaption}
+\item[{const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&}]{cloud, }
+\item[{S\-Q\-Parameters \&}]{sq\-Params}
+\end{DoxyParamCaption}
+)}}\label{namespaceope_a3f02990e29d089b0653c18c5c3ef50a2}
+
+
+Calculates the average error of fit of superquadric parameters. 
+
+The error of fit is the mean of the algebraic distance calculated by the inside-\/outside function. \hypertarget{namespaceope_a2f7f74aa34336a020dde069cf05e8d65}{\index{ope@{ope}!estimate\-Parameters@{estimate\-Parameters}}
+\index{estimate\-Parameters@{estimate\-Parameters}!ope@{ope}}
+\subsubsection[{estimate\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}int ope\-::estimate\-Parameters (
+\begin{DoxyParamCaption}
+\item[{const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&}]{cloud, }
+\item[{S\-Q\-Parameters \&}]{sq\-Params, }
+\item[{int}]{eigen\-Vector}
+\end{DoxyParamCaption}
+)}}\label{namespaceope_a2f7f74aa34336a020dde069cf05e8d65}
+
+
+Estimate the parameters of a superquadric from the given point cloud. 
+
+\begin{DoxyReturn}{Returns}
+the eigen vector index with the largest variance 
+\end{DoxyReturn}
+\hypertarget{namespaceope_a5b321bd75cd22d494f0ead1b3a951145}{\index{ope@{ope}!estimate\-Parameters\-New@{estimate\-Parameters\-New}}
+\index{estimate\-Parameters\-New@{estimate\-Parameters\-New}!ope@{ope}}
+\subsubsection[{estimate\-Parameters\-New}]{\setlength{\rightskip}{0pt plus 5cm}int ope\-::estimate\-Parameters\-New (
+\begin{DoxyParamCaption}
+\item[{const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&}]{cloud, }
+\item[{S\-Q\-Parameters \&}]{sq\-Params, }
+\item[{int}]{eigen\-Vector}
+\end{DoxyParamCaption}
+)}}\label{namespaceope_a5b321bd75cd22d494f0ead1b3a951145}
+
+
+Estimate the parameters of a superquadric from the given point cloud. 
+
+\begin{DoxyReturn}{Returns}
+the eigen vector index with the largest variance 
+\end{DoxyReturn}
+\hypertarget{namespaceope_a444748833a4762249ad2034b1a371264}{\index{ope@{ope}!initialize\-Minimization\-Parameters@{initialize\-Minimization\-Parameters}}
+\index{initialize\-Minimization\-Parameters@{initialize\-Minimization\-Parameters}!ope@{ope}}
+\subsubsection[{initialize\-Minimization\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void ope\-::initialize\-Minimization\-Parameters (
+\begin{DoxyParamCaption}
+\item[{S\-Q\-Parameters \&}]{sq\-Params}
+\end{DoxyParamCaption}
+)}}\label{namespaceope_a444748833a4762249ad2034b1a371264}
+
+
+Initializes the Levenberg-\/\-Marquadt minimization parameters used for sq estimation. 
+
+Assign size parameter values based on their bounds properties \hypertarget{namespaceope_a5d543d113e6ec3fa791e317f7fb4477f}{\index{ope@{ope}!mrqmin@{mrqmin}}
+\index{mrqmin@{mrqmin}!ope@{ope}}
+\subsubsection[{mrqmin}]{\setlength{\rightskip}{0pt plus 5cm}double ope\-::mrqmin (
+\begin{DoxyParamCaption}
+\item[{S\-Q\-Parameters \&}]{prm, }
+\item[{const glndata2 \&}]{x, }
+\item[{glndata}]{F, }
+\item[{glndata}]{sig, }
+\item[{int}]{ndata, }
+\item[{glmma}]{a, }
+\item[{gllista}]{lista, }
+\item[{int}]{mfit, }
+\item[{glcovar}]{covar, }
+\item[{glcovar}]{alpha, }
+\item[{double}]{alamda, }
+\item[{int $\ast$}]{n\-\_\-model\-\_\-acc}
+\end{DoxyParamCaption}
+)}}\label{namespaceope_a5d543d113e6ec3fa791e317f7fb4477f}
+
+
+Levenberg Marquadt minimization. 
+
+Adding Noise \hypertarget{namespaceope_a33a980d43bb42f595c8742da80795961}{\index{ope@{ope}!perform\-Shape\-Fitting@{perform\-Shape\-Fitting}}
+\index{perform\-Shape\-Fitting@{perform\-Shape\-Fitting}!ope@{ope}}
+\subsubsection[{perform\-Shape\-Fitting}]{\setlength{\rightskip}{0pt plus 5cm}void ope\-::perform\-Shape\-Fitting (
+\begin{DoxyParamCaption}
+\item[{const pcl\-::\-Point\-Cloud$<$ pcl\-::\-Point\-X\-Y\-Z $>$ \&}]{cloud, }
+\item[{S\-Q\-Parameters \&}]{init\-Params, }
+\item[{S\-Q\-Parameters \&}]{best\-Params}
+\end{DoxyParamCaption}
+)}}\label{namespaceope_a33a980d43bb42f595c8742da80795961}
+
+
+Executes the superquadric shape fitting process on a point cloud and gets the best parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$init\-Params$>$} & the initial superquadric parameters for the given cloud \\
+\hline
+{\em $<$best\-Params$>$} & the final superquadric parameters recovered after processing \\
+\hline
+\end{DoxyParams}

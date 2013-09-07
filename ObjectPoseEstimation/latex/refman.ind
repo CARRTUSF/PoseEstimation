@@ -1,0 +1,138 @@
+\begin{theindex}
+
+  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}declspec}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Object\discretionary {-}{}{}Pose\discretionary {-}{}{}Estimator}, 
+		\hyperpage{15}
+
+  \indexspace
+
+  \item {convert\discretionary {-}{}{}Point\discretionary {-}{}{}Cloud}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Utils}, 
+		\hyperpage{28}
+
+  \indexspace
+
+  \item {distance\discretionary {-}{}{}To\discretionary {-}{}{}Plane}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Plane}, 
+		\hyperpage{18}
+
+  \indexspace
+
+  \item {error\discretionary {-}{}{}Func}
+    \subitem {ope}, \hyperpage{10}
+  \item {estimate\discretionary {-}{}{}Parameters}
+    \subitem {ope}, \hyperpage{10}
+  \item {estimate\discretionary {-}{}{}Parameters\discretionary {-}{}{}New}
+    \subitem {ope}, \hyperpage{10}
+
+  \indexspace
+
+  \item {initialize\discretionary {-}{}{}Minimization\discretionary {-}{}{}Parameters}
+    \subitem {ope}, \hyperpage{10}
+  \item {intersection\discretionary {-}{}{}With\discretionary {-}{}{}Line}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Plane}, 
+		\hyperpage{18}
+  \item {is\discretionary {-}{}{}Valid}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Plane}, 
+		\hyperpage{18}
+
+  \indexspace
+
+  \item {mrqmin}
+    \subitem {ope}, \hyperpage{10}
+
+  \indexspace
+
+  \item {normal}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Plane}, 
+		\hyperpage{19}
+
+  \indexspace
+
+  \item {O\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}Settings}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}Settings}, 
+		\hyperpage{17}
+  \item {Object\discretionary {-}{}{}Pose\discretionary {-}{}{}Estimation/\discretionary {-}{}{}Main.\discretionary {-}{}{}cpp}, 
+		\hyperpage{29}
+  \item {Object\discretionary {-}{}{}Pose\discretionary {-}{}{}Estimation/\discretionary {-}{}{}Table\discretionary {-}{}{}Object\discretionary {-}{}{}Detector.\discretionary {-}{}{}hpp}, 
+		\hyperpage{29}
+  \item {Object\discretionary {-}{}{}Selector}, \hyperpage{16}
+  \item {objects}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Object\discretionary {-}{}{}Model\discretionary {-}{}{}Generator}, 
+		\hyperpage{14}
+  \item {ope}, \hyperpage{7}
+    \subitem {error\discretionary {-}{}{}Func}, \hyperpage{10}
+    \subitem {estimate\discretionary {-}{}{}Parameters}, \hyperpage{10}
+    \subitem {estimate\discretionary {-}{}{}Parameters\discretionary {-}{}{}New}, 
+		\hyperpage{10}
+    \subitem {initialize\discretionary {-}{}{}Minimization\discretionary {-}{}{}Parameters}, 
+		\hyperpage{10}
+    \subitem {mrqmin}, \hyperpage{10}
+    \subitem {perform\discretionary {-}{}{}Shape\discretionary {-}{}{}Fitting}, 
+		\hyperpage{10}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Bounding\discretionary {-}{}{}Box}, 
+		\hyperpage{11}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}M\discretionary {-}{}{}Point}, 
+		\hyperpage{13}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Minimization\discretionary {-}{}{}Parameters}, 
+		\hyperpage{12}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}Settings}, 
+		\hyperpage{16}
+    \subitem {O\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}Settings}, 
+		\hyperpage{17}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Object\discretionary {-}{}{}Model\discretionary {-}{}{}Generator}
+    \subitem {objects}, \hyperpage{14}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Object\discretionary {-}{}{}Model\discretionary {-}{}{}Generator$<$ Point\discretionary {-}{}{}Type $>$}, 
+		\hyperpage{13}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Object\discretionary {-}{}{}Pose\discretionary {-}{}{}Estimator}, 
+		\hyperpage{14}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}declspec}, 
+		\hyperpage{15}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Parameter\discretionary {-}{}{}Limits}, 
+		\hyperpage{17}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Plane}, 
+		\hyperpage{17}
+    \subitem {distance\discretionary {-}{}{}To\discretionary {-}{}{}Plane}, 
+		\hyperpage{18}
+    \subitem {intersection\discretionary {-}{}{}With\discretionary {-}{}{}Line}, 
+		\hyperpage{18}
+    \subitem {is\discretionary {-}{}{}Valid}, \hyperpage{18}
+    \subitem {normal}, \hyperpage{19}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Cloud\discretionary {-}{}{}Capture}, 
+		\hyperpage{19}
+    \subitem {run}, \hyperpage{20}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}Q\discretionary {-}{}{}Fitting\discretionary {-}{}{}Thread\discretionary {-}{}{}Info}, 
+		\hyperpage{20}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}Q\discretionary {-}{}{}Parameters}, 
+		\hyperpage{22}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Table\discretionary {-}{}{}Object\discretionary {-}{}{}Detector$<$ Point\discretionary {-}{}{}Type $>$}, 
+		\hyperpage{24}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Table\discretionary {-}{}{}Object\discretionary {-}{}{}Model$<$ Point\discretionary {-}{}{}Type $>$}, 
+		\hyperpage{26}
+  \item {ope\discretionary {-}{}{}::\discretionary {-}{}{}Utils}, 
+		\hyperpage{27}
+    \subitem {convert\discretionary {-}{}{}Point\discretionary {-}{}{}Cloud}, 
+		\hyperpage{28}
+    \subitem {transform\discretionary {-}{}{}Point\discretionary {-}{}{}Cloud}, 
+		\hyperpage{28}
+
+  \indexspace
+
+  \item {perform\discretionary {-}{}{}Shape\discretionary {-}{}{}Fitting}
+    \subitem {ope}, \hyperpage{10}
+  \item {Point\discretionary {-}{}{}Cloud$<$ Point\discretionary {-}{}{}X\discretionary {-}{}{}Y\discretionary {-}{}{}Z\discretionary {-}{}{}R\discretionary {-}{}{}G\discretionary {-}{}{}B $>$}, 
+		\hyperpage{19}
+
+  \indexspace
+
+  \item {run}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Point\discretionary {-}{}{}Cloud\discretionary {-}{}{}Capture}, 
+		\hyperpage{20}
+
+  \indexspace
+
+  \item {transform\discretionary {-}{}{}Point\discretionary {-}{}{}Cloud}
+    \subitem {ope\discretionary {-}{}{}::\discretionary {-}{}{}Utils}, 
+		\hyperpage{28}
+
+\end{theindex}

@@ -186,7 +186,7 @@ bool TableObjectDetector<PointType> :: detect(PointCloudConstPtr cloud) {
 			pobj.y = object_points[j].y;
 			pobj.z = object_points[j].z;
 
-			min_dist_to_plane = std::min(plane().distanceToPlane(pobj), min_dist_to_plane);
+			min_dist_to_plane = std::min(plane().distanceToPlane(pobj), min_dist_to_plane);  //ask Kester about plane()
 		}
 
 		if (min_dist_to_plane > m_max_dist_to_plane)

@@ -312,6 +312,7 @@ int estimateParameters(const pcl::PointCloud<pcl::PointXYZ>& cloud, SQParameters
 
 /**
  * \brief Estimate the parameters of a superquadric from the given point cloud
+    @param [in] cloud input cloud
  * \return the eigen vector index with the largest variance
  */
 int estimateParametersNew(const pcl::PointCloud<pcl::PointXYZ>& cloud, SQParameters& sqParams, int eigenVector) {

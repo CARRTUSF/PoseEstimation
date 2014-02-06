@@ -5,7 +5,7 @@ using namespace ope;
 
 /// Normalize an XYZ vector
 static void normalize(pcl::PointXYZ& v) {
-	float denom = 1.0f / std::sqrtf((v.x * v.x) + (v.y * v.y) + (v.z * v.z));
+	float denom = 1.0f / sqrtf((v.x * v.x) + (v.y * v.y) + (v.z * v.z));
 
 	v.x *= denom;
 	v.y *= denom;

@@ -14,7 +14,7 @@
 using namespace std;
 
 int main (int argc, char *argv[]) {
-	ope::OPESettings settings; // Using default settings
+	ope::OPESettings settings; //Using default settings
 	settings.minTgtDepth = 0.4f;
 	settings.maxObjHeight = 2.5f;
 

@@ -18,6 +18,9 @@ int main (int argc, char *argv[]) {
 	settings.minTgtDepth = 0.4f;
 	settings.maxObjHeight = 2.5f;
 
+	ope::ObjectPoseEstimator poseEstimator;
+	//poseEstimator.init(settings);
+
 	ope::SQParameters sqParams = ope::ObjectPoseEstimator::run(settings);
 	ope::verbose = false;
 	

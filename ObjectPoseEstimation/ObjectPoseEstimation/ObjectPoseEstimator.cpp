@@ -205,6 +205,54 @@ SQParameters ObjectPoseEstimator::calculateObjectPose(pcl::PointCloud<pcl::Point
 }
 
 
+//this function will return the object closest to the seed point
+SQParameters ObjectPoseEstimator::getClosestObject(pcl::PointCloud<pcl::PointXYZRGB>& cloud, pcl::PointXYZ& seedPoint){
+	 //Initialize everything
+	//init(opeSettings);
+
+	SQParameters sqParams;
+	//PointCloudCapture cap;
+	//pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloudPtr (new pcl::PointCloud<pcl::PointXYZRGB>);
+	bool detectedObjects;
+	size_t desiredObjIdx = 0;
+
+	/*
+	 * Capture point cloud
+	 */
+	//cap.run(*cloudPtr);
+	
+
+	/*
+	 * Generate object models based on extracted clusters
+	 */
+	pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloudPtr(&cloud);
+	ObjectModelGenerator<pcl::PointXYZRGB> generator(cloudPtr);
+	detectedObjects = generator.generateObjectModels();
+
+
+	/*
+	 * Choose the object whose pose (position and orientation) you wish to calculate
+	 */
+	if (detectedObjects) {
+
+		int numObjects = generator.getNumDetectedObjects();
+		/* calculate the object that seed point belongs to */
+		desiredObjIdx = Utils::getDesiredObject(cloudPtr, generator.getBoundingBoxes());
+		
+		/*
+		 * Calculate the object pose using Superquadrics
+		 */
+		sqParams = ObjectPoseEstimator::calculateObjectPose(generator.objects[desiredObjIdx].objectCloud);
+		cout << sqParams;
+
+	} else {
+		cout << ">> NO OBJECTS WERE DETECTED!" << endl;
+	}
+
+	return sqParams;
+}
+
+
 SQParameters ObjectPoseEstimator::run(const OPESettings& opeSettings) {
 	// Initialize everything
 	init(opeSettings);

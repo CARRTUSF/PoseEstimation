@@ -37,13 +37,15 @@
 #pragma once
 #ifndef __OBJECT_POSE_ESTIMATOR_H__
 #define __OBJECT_POSE_ESTIMATOR_H__
-
+//#include <pcl/point_types.h>
+//#include <Eigen/StdVector>
 
 /// Forward declarations to avoid header file includes
 class SQParameters;
 namespace pcl {
 
 struct PointXYZRGB;
+struct PointXYZ;
 template <class PointXYZRGB> class PointCloud;
 
 } // pcl
@@ -140,6 +142,8 @@ public:
 	 * \return An \a SQParameters object containing the 13 superquadric parameters.
 	 */
 	static __declspec(dllexport) SQParameters run(const OPESettings& opeSettings);
+
+	static __declspec(dllexport) SQParameters getClosestObject(pcl::PointCloud<pcl::PointXYZRGB>&cloudPtr , pcl::PointXYZ& seedPoint);
 
 private:
 	/**

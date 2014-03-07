@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/point_types.h>
 
@@ -236,8 +237,25 @@ SQParameters ObjectPoseEstimator::getClosestObject(pcl::PointCloud<pcl::PointXYZ
 	if (detectedObjects) {
 
 		int numObjects = generator.getNumDetectedObjects();
-		/* calculate the object that seed point belongs to */
-		desiredObjIdx = Utils::getDesiredObject(cloudPtr, generator.getBoundingBoxes());
+		/* calculate the object that is closest to the seed point */
+		double minDist = DBL_MAX;
+		int closestObjID = 0;
+		for(int i = 0; i < numObjects; ++i){
+			//for each object
+			auto& curObjCloud = generator.objects[desiredObjIdx].objectCloud;
+			//for each point in the object calculate the distance to the seed point
+			double curMin = DBL_MAX;
+			for (int j = 0; j < curObjCloud.points.size() ; ++j){
+				pcl::PointXYZRGB p = curObjCloud.points[i];
+				double distance = sqrt( pow((seedPoint.x - p.x),2) + pow((seedPoint.y - p.y),2) + pow((seedPoint.z - p.z),2) ) ;
+				curMin = std::min( distance, curMin); 
+			}
+			if(minDist > curMin){
+				closestObjID = i;
+				minDist = curMin;
+			}
+		}
+		desiredObjIdx = closestObjID; //Utils::getDesiredObject(cloudPtr, generator.getBoundingBoxes());
 		
 		/*
 		 * Calculate the object pose using Superquadrics

@@ -235,9 +235,10 @@ public:
 	std::vector < TableObjectModel< PointType >, Eigen::aligned_allocator< TableObjectModel< PointType > > > objects;
 
 
-	ObjectModelGenerator() : detectedObjects(false) { }
-	ObjectModelGenerator(PointCloudConstPtr ptCloudPtr) {
-		setSourceCloud(ptCloudPtr);		
+	ObjectModelGenerator() : /*detectedObjects(false)*/ { }
+	ObjectModelGenerator(PointCloudConstPtr ptCloudPtr)  {
+		setSourceCloud(ptCloudPtr);	
+		/*detectedObjects=false;*/
 	}
 	~ObjectModelGenerator() {
 		if(!objects.empty()) {
@@ -291,6 +292,19 @@ public:
 
 		return objectBoxes;
 	}
+
+	int getNumDetectedObjects(){
+		return objects.size();
+	}
+
+	/*std::vector<pcl::PointCloud<pcl::PointXYZRGB>> getObjectClouds(){
+		std::vector< pcl::PointCloud<pcl::PointXYZRGB>, Eigen::aligned_allocator<pcl::PointCloud<pcl::PointXYZRGB>>> objectClouds;
+
+		for (size_t i = 0; i < objects.size(); ++i) {
+			objectClouds.push_back(objects[i].objectCloud);
+		}
+		return objectClouds;
+	}*/
 	
 }; // ObjectModelGenerator
 

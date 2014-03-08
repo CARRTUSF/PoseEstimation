@@ -32,7 +32,7 @@ void ObjectPoseEstimator::init(const OPESettings& opeSettings) {
 }
 
 
-SQParameters ObjectPoseEstimator::calculateObjectPose(pcl::PointCloud<pcl::PointXYZRGB>& selectedObjectPtCloud) {
+SQParameters ObjectPoseEstimator::calculateObjectPose(pcl::PointCloud<pcl::PointXYZRGB>& src) {
 	// The initial XYZ point cloud that is processes for pose estimation
 	pcl::PointCloud<pcl::PointXYZ> cloud;
 
@@ -59,7 +59,9 @@ SQParameters ObjectPoseEstimator::calculateObjectPose(pcl::PointCloud<pcl::Point
 	 * world coordinate frame. Additional transformations may have to be done depending
 	 * on the application, but this is left up to the user.
 	 */
-	Utils::transformPointCloud(selectedObjectPtCloud);
+	pcl::PointCloud<pcl::PointXYZRGB> selectedObjectPtCloud;
+
+	Utils::transformPointCloud(src,selectedObjectPtCloud);
 
 	/*
 	 * The captured XYZRGB point cloud must be converted to an XYZ cloud

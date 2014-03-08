@@ -67,7 +67,7 @@ public:
 	 * \brief Transform an XYZRGB point cloud from the Kinect optical frame to world coordinate frame
 	 * \param <cloud> - the cloud to be transformed
 	 */
-	static void transformPointCloud(pcl::PointCloud<pcl::PointXYZRGB>& cloud);
+	static void transformPointCloud(pcl::PointCloud<pcl::PointXYZRGB>& src,  pcl::PointCloud<pcl::PointXYZRGB>& dst);
 
 	/**
 	 * \brief Prints the current local time to the output stream
@@ -78,6 +78,11 @@ public:
 	 * \brief Displays a pointcloud with highlighted objects in order to determine the user's object of choice
 	 */
 	static size_t getDesiredObject(pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr ptCloudPtr, const std::vector<BoundingBox>& boxes);
+
+	/**
+	 * \brief reads a transformation matrix from file to a Eigen matrix
+	 */
+	static bool readTransformationMatFromFile(std::string fileName, Eigen::Matrix4f &transform);
 
 };
 

@@ -2,9 +2,11 @@
 #include "TableObjectModeler.h"
 #include <iomanip>
 #include <boost/date_time/posix_time/posix_time.hpp>
+#include <pcl/common/transforms.h>
 #include <boost/thread/thread.hpp>
 #include <boost/lexical_cast.hpp>
 #include <pcl/visualization/cloud_viewer.h>
+
 
 using namespace ope;
 
@@ -39,15 +41,22 @@ void Utils::convertPointCloud(const pcl::PointCloud<pcl::PointXYZRGBA>& src, pcl
 }
 
 
-void Utils::transformPointCloud(pcl::PointCloud<pcl::PointXYZRGB>& cloud) {
-	for (size_t i = 0; i < cloud.size(); ++i) {
+void Utils::transformPointCloud(pcl::PointCloud<pcl::PointXYZRGB>& src, pcl::PointCloud<pcl::PointXYZRGB>& dst) {
+	//read the tf from file 
+	Eigen::Matrix4f transform;
+	Utils::readTransformationMatFromFile("kinectToWorld", transform);
+	//transform using PCL transform
+	pcl::transformPointCloud(src, dst, transform); 
+
+
+	/*for (size_t i = 0; i < cloud.size(); ++i) {
 		pcl::PointXYZRGB p = cloud.points[i];
 
 		cloud.points[i].x = p.z;
 		cloud.points[i].y = -p.x;
 		cloud.points[i].z = -p.y;
 	}
-
+*/
 }
 
 
@@ -58,6 +67,25 @@ void Utils::printCurrentDateTime() {
 	std::cout << " " << now.date() << std::endl;
 	std::cout << " " << now.time_of_day() << std::endl;
 	std::cout << "+-------------------------------------------+" << std::endl << std::endl;
+}
+
+bool Utils::readTransformationMatFromFile(std::string fileName, Eigen::Matrix4f &transform){
+	//
+	ifstream inputFile;
+	inputFile.open (fileName.c_str());
+	if (!inputFile.is_open()){
+		//cout << "Error opening input file" << endl;
+		return false;
+	}
+	//read 
+	double val[4] = {0};
+	std::string temp;
+	for(int i = 0 ; i < 4 ; ++i){
+		getline(inputFile, temp);
+		sscanf(temp.c_str(),"%lf %lf %lf %lf", &val[0], &val[1], &val[2], &val[3]);
+		transform(i,0) = val[0]; transform(i,1) = val[1]; transform(i,2) = val[2]; transform(i,3) = val[3]; 
+	}
+	return true;
 }
 
 
